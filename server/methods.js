@@ -3,6 +3,7 @@ var github = new Github({version: "3.0.0"});
 
 Meteor.methods({
   "search": function(user, repo, keyword) {
+    console.log("new search request: ", keyword, "on", user + "/" + repo);
     var repos = Meteor.sync(function(done) {
       github.search.issues({
         user: user,

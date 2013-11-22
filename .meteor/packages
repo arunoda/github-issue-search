@@ -7,3 +7,5 @@ autopublish
 insecure
 preserve-inputs
 bootstrap
+standard-app-packages
+npm
